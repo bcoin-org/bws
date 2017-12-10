@@ -8,7 +8,7 @@ Wrap websockets to make them look like node.js tcp sockets.
 const net = require('bws');
 
 const server = net.createServer();
-server.on('connect', (socket) => {
+server.on('connection', (socket) => {
   socket.setEncoding('utf8');
   socket.on('data', (data) => {
     console.log(data);
