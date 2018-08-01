@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "bsert": "~0.0.3",
-    "faye-websocket": "~0.11.1"
+    "bsock": "~0.1.2"
   },
   "devDependencies": {
     "eslint": "^5.1.0",
@@ -29,7 +29,6 @@
     "node": ">=8.0.0"
   },
   "browser": {
-    "./lib/backend": "./lib/backend-browser.js",
     "./lib/server": "./lib/server-browser.js"
   }
 }
